@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Odisee Administratie | Login</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/start.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/thumbnail.png"/>
+</head>
+<body>
+	<header class="clearfix">
+		<div id="logo">
+			<img src="img/logo.png">
+		</div>
+	</header>
+
+	<div id="login">
+		<section id="form">
+			<form>
+				<dl>
+					<input type="hidden" name="moduleAction" value="submitted"/>
+
+					<dt class="lbl">
+						<label for="nummer">r- of u-nummer</label>
+					</dt>
+					<dt>
+						<input id="nummer" class="field input" type="text" name="nummer"/>
+					</dt>
+
+					<dt class="lbl">
+						<label for="wachtwoord">wachtwoord</label>
+					</dt>
+					<dt>
+						<input id="wachtwoord" class="field input" type="password" name="wachtwoord"/>
+					</dt>
+
+					<span>
+						<p id="error"></p>
+					</span>
+					<dt><input src="img/login.png" id="button" class="input" type="image" name="btnSubmit" value="Log in" />
+				</dl>
+			</form>
+		</section>
+	</div>
+	<footer class="clearfix">
+		<div>
+			<p>App created by Ruben, Seppe and Gilles</p>
+		</div>
+	</footer>
+	<script src="js/index.js"></script>
+	<script src="js/phonegap-nfc.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/script.js"></script>
+	<script src="cordova.js"></script>
+</body>
+</html>

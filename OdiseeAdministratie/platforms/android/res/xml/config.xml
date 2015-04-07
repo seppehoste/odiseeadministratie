@@ -1,38 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.examenkaart" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
     <name>OdiseeAdministratie</name>
-    <!-- description of application -->
     <description>
     	Deze applicatie digitaliseert de examenkaart
     </description>
-
-    <!-- icon of application -->
     <icon src="icon.png" />
-
     <author email="ruben.alliet@student.odisee.be" href="http://cordova.io">
         Seppe Hoste, Gilles Sollemé en Ruben Alliet
     </author>
-
-    <!-- 
-    *****************************
-    *        PREFERENCES        *
-    *****************************
-     -->
-
-    <!-- all : phone-gap version that we use -->
     <preference name="phonegap-version" value="3.7.0" />
-
-    <!-- all : device orientation only portrait enabled -->
     <preference name="orientation" value="portrait" />
-
-    <!-- all : enable fullscreen on device,hides status bar at top of screen -->
     <preference name="fullscreen" value="true" />
-
-    <!-- all: possible values handset, tablet, or universal -->
-    <preference name="target-device" value="universal" />     
-
-    <!-- ios: if set to true, app will terminate when home button is pressed -->
-    <preference name="exit-on-suspend" value="false" />          
-
+    <preference name="target-device" value="universal" />
+    <preference name="exit-on-suspend" value="false" />
     <access origin="*" />
+    <feature name="NfcPlugin">
+        <param name="android-package" value="com.chariotsolutions.nfc.plugin.NfcPlugin" />
+        <param name="onload" value="true" />
+    </feature>
 </widget>
