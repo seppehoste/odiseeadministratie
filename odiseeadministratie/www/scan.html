@@ -1,37 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Odisee Administratie | Keuze</title>
-        	<meta charset="utf-8" />
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" href="css/start.css">
-			<link rel="stylesheet" href="css/style.css">
-			<link rel="shortcut icon" href="img/thumbnail.png"/>
-    </head>
-    <body>
-    	<header>Naam Docent</header>
-    	<div>
-			<section id="scanner">
-				<h2>Houd de studentenkaart tegen de achterzijde om te scannen</h2>
+      <head>
+    <link rel="stylesheet" type="text/css" href="css/leerkrachten.css">
 
-				<a href="#" id="NFCicon" class="loading"></a>
-			</section>
-		</div>
+  </head>
 
-		<footer>
-			<div>
-				<p>App created by Ruben, Seppe and Gilles</p>
-			</div>
-		</footer>
-        <div class="app">
-        	<div id="messageDiv"></div>
+  <div id="screen">
+    <div id="header">
+      <ul id="menu">
+        <li>Overzicht</uli>
+        <li>Scannen</uli>
+        <li>Logout</uli>
+        <li class="reload"><i class="loader-icon"></i></li>
+      </ul>
+      <div class="pullmenu-icon"></div>
+    </div>
+  <div class="pages">
+      <div class="page" id="overzicht">
+        <div id="aanwezigheden">
+            <input type="text" id="query" placeholder="Zoek leerling"/>
+            <select id="vakkeuze">
+              <option value="">Kies vak...</option>
+              <option value="vak1">vak1</option>
+              <option value="vak2">vak2</option>
+              <option value="vak3">vak3</option>
+              <option value="vak4">vak4</option>
+            </select>
+            <select id="status">
+              <option value="">Kies status...</option>
+              <option value="vak1">Aanwezig</option>
+              <option value="vak2">Afwezig</option>
+              <option value="vak3">In afwachting</option>
+            </select>
+            <input type ="button" id="button" value="Zoek"/>
+
+            <ul id="aanwezigheden_ul">
+              <li class="aanwezig">
+                Naam: Seppe Hoste<br/>
+                Datum en tijd: 12u30<br/>
+                Ingescand op: 12u45 <br/> 
+                AANWEZIG
+              </li>
+
+              <li class="toekomst">
+                Naam: Gilles Solleme<br/>
+                Datum: /
+                <br/>
+                IN AFWACHTING
+              </li>
+              <li class="afwezig">
+                Naam: Ruben Alliet<br/>
+                Datum: /
+                <br/>
+                AFWEZIG
+              </li>
+              <li class="aanwezig">
+                Naam: Seppe Hoste<br/>
+                Datum en tijd: 12u30<br/>
+                Ingescand op: 12u45 <br/> 
+                AANWEZIG
+              </li>
+
+              <li class="toekomst">
+                Naam: Gilles Solleme<br/>
+                Datum: /
+                <br/>
+                IN AFWACHTING
+              </li>
+              <li class="afwezig">
+                Naam: Ruben Alliet<br/>
+                Datum: /
+                <br/>
+                AFWEZIG
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div class="page" id="scannen">
+         <div>
+          <section id="scanner">
+            <h2>Houd de studentenkaart tegen de achterzijde om te scannen</h2>
+
+            <a href="#" id="NFCicon" class="loading"></a>
+            <h3 id="vaktitel">Vak: web and mobile development</h3>
+            <h3>Docent: Davy De Winne</h3>
+          </section>         
         </div>
+      </div>
+     
+      <div class="page" id="logout">
+        <div id="uitlogbevestiging">
+          <p>Ben je zeker dat je wil uitloggen?</p>
+        </div>
+        <div class="controls">
+            <button class="option  option--deny">&times;</button>
+            <!-- voorlopig aande hand van onclick, in externe js file zetten? -->
+            <button class="option  option--confirm" tabIndex="1">&check;</button>
+        </div>
+      </div>
+  </div>
+  </div>
+        <script type="text/javascript" src="js/jquery.js"></script> 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
         	app.initialize();
         </script>
         <script type="text/javascript" src="js/script.js"></script>
-        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript"src="js/leerkrachten.js"></script>
+        
     </body>
 </html>

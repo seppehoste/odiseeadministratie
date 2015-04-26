@@ -1,33 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Odisee Administratie | Overzicht</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/start.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" href="img/thumbnail.png"/>
-</head>
-<body>
-	<header class="clearfix">
-		<div id="logo">
-			<img src="img/logo.png">
-		</div>
-	</header>
+    <head>
+    	<link rel="stylesheet" type="text/css" href="css/leerlingen.css">
+	</head>
 
-	<div id="overzicht">
-		<section id="tabel">
-			<p>HIER KOMT DE STUDENT ZIJN EXAMENROOSTER</p>
-		</section>
+  <div id="screen">
+    <div id="header">
+      <ul id="menu">
+        <li>Examenrooster</li>
+        <li>Logout</li>
+        <li class="reload"><i class="loader-icon"></i></li>
+      </ul>
+      <div class="pullmenu-icon"></div>
+    </div>
+	<div class="pages">
+	    <div class="page" id="examenrooster">
+		    <div id="aanwezigheden">
+		        <ul id="aanwezigheden_ul">
+		            <li class="afwezig">
+					    Vak: Programmeren 1<br/>
+					    Lokaal: Lab01<br/>
+					    Datum en tijd: 20/04/2015 8u10
+					    <br/>
+					    AFWEZIG
+					</li>
+					<li class="aanwezig">
+					    Vak: Webscripten<br/>
+					    Lokaal: Lab02<br/>
+					    Datum en tijd: 24/04/2015  12u30 <br/>  
+					    Ingescand op: 12u45 
+					    <br/>
+					    AANWEZIG
+					</li>   
+					<li class="toekomst">
+					    Vak: Webscripten<br/>
+					    Lokaal: Lab03<br/>
+					    Datum en tijd: 28/04/2015 8u10 <br/>
+					    IN AFWACHTING
+					</li>
+					<li class="afwezig">
+					    Vak: Programmeren 1<br/>
+					    Lokaal: Lab01<br/>
+					    Datum en tijd: 20/04/2015 8u10
+					    <br/>
+					    AFWEZIG
+					</li>
+					<li class="aanwezig">
+					    Vak: Webscripten<br/>
+					    Lokaal: Lab02<br/>
+					    Datum en tijd: 24/04/2015  12u30 <br/>  
+					    Ingescand op: 12u45 
+					    <br/>
+					    AANWEZIG
+					</li>   
+					<li class="toekomst">
+					    Vak: Webscripten<br/>
+					    Lokaal: Lab03<br/>
+					    Datum en tijd: 28/04/2015 8u10 <br/>
+					    IN AFWACHTING
+					</li>
+		        </ul>
+		    </div>
+		</div>
+	    <div class="page" id="logout">
+	   		<div id="uitlogbevestiging">
+	   			<p>Ben je zeker dat je wil uitloggen?</p>
+	   		</div>
+	    	
+	    	<div class="controls">
+			    <button class="option  option--deny" >&times;</button><!--
+			 --><button class="option  option--confirm" tabIndex="1">&check;</button>
+			</div>
+	    </div>
 	</div>
-
-	<footer>
-		<div>
-			<p>App created by Ruben, Seppe and Gilles</p>
-		</div>
-	</footer>
-	<script src="js/jquery.js"></script>
-	<script src="js/script.js"></script>
-	<script src="phonegap.js"></script>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/leerlingen.js"></script>
 </body>
 </html>
+
+
+
