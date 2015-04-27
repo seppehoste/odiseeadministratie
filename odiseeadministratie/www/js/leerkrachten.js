@@ -24,8 +24,7 @@ $('.option--confirm').on('click touchstart', function () {
 });
 
 $('.option--deny').on('click touchstart', function () {
-	$("#logout").hide();
-	$("#overzicht").show();
+	window.location.href='scan.html';
 });
 
 

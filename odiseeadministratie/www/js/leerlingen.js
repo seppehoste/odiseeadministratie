@@ -42,8 +42,7 @@ $('.option--confirm').on('click touchstart', function () {
 });
 
 $('.option--deny').on('click touchstart', function () {
-	$("#logout").hide();
-	$("#examenrooster").show();
+	window.location.href='overzicht.html';
 });
 
 
